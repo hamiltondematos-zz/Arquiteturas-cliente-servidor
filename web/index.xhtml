@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <h:outputStylesheet name="css/bootstrap.css"/>        
+
+        <h:panelGrid>
+            <h:panelGroup layout="block" class="panel panel-primary">  
+                <h:panelGroup layout="block" class="panel-heading">File upload</h:panelGroup>
+                <h:panelGroup layout="block" class="panel-body">
+
+                    <h:form enctype="multipart/form-data">
+                        <h:outputLabel value="Título:" for="title" />
+                        <h:inputText id="title" value="#{bookManagedBean.newBook.title}" title="Title" class="form-control" pt:placeholder="Insira o título" pt:required="true"/>
+                        <br/>
+                        <h:outputLabel value="Arquivo:" for="bookFile" />
+                        <h:inputFile value="#{bookManagedBean.bookFile}" title="arquivo" pt:required="true" />
+                        <br/>
+                        <h:commandButton value="salvar" action="#{bookManagedBean.save()}" class="btn btn-default"/>
+                    </h:form>
+
+                </h:panelGroup>
+            </h:panelGroup>
+        </h:panelGrid>
+
+        <h:messages/>
+    </h:body>
+</html>
+
