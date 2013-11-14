@@ -1,6 +1,3 @@
-Arquiteturas-cliente-servidor
-=============================
-
 (Abrir o projeto netbeans 7.4+. Essa versão já possui suporte para JEE7, glassfish4, jsf2.2, html5 etc)
 
 Pessoal, esse projeto tem exemplos de alguns mecanismos que vimos em aula. Entre eles:
