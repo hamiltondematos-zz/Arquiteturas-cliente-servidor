@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Arquiteturas-cliente-servidor : Exemplos de alguns mecanismos que vimos em aula." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Arquiteturas-cliente-servidor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hamiltondematos/Arquiteturas-cliente-servidor">View on GitHub</a>
+
+          <h1 id="project_title">Arquiteturas-cliente-servidor</h1>
+          <h2 id="project_tagline">Exemplos de alguns mecanismos que vimos em aula.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/hamiltondematos/Arquiteturas-cliente-servidor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/hamiltondematos/Arquiteturas-cliente-servidor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="arquiteturas-cliente-servidor" class="anchor" href="#arquiteturas-cliente-servidor"><span class="octicon octicon-link"></span></a>Arquiteturas-cliente-servidor</h1>
+
+<p>(Abrir o projeto netbeans 7.4+. Essa versão já possui suporte para JEE7, glassfish4, jsf2.2, html5 etc)</p>
+
+<p>Pessoal, esse projeto tem exemplos de alguns mecanismos que vimos em aula. Entre eles:</p>
+
+<pre><code>Twitter bootstrap 
+    Listas
+    Paineis
+    Css de botões e etc
+
+JSF/HTML5
+    Convenção para incluir css e js
+        &lt;h:outputStylesheet name="css/bootstrap.css"/&gt;
+        Colocar os arquivos dentro da pasta resources
+
+    Delegação para o browser de atributos HTML5
+        Namespace xmlns:pt=http://xmlns.jcp.org/jsf/passthrough
+        Dentro de inputs de texto por exemplo
+            pt:placeholder="Insira o título"
+
+    acionamento de métodos jsf a partir de html puro
+        namespace xmlns:jsf=http://xmlns.jcp.org/jsf
+        &lt;button jsf:outcome="index"...
+
+    Navegação implícita 
+        Método que retorna String redireciona para página que tenha o nome igual ao valor do retorno
+
+    Novo componente para envio de arquivos
+        &lt;h:inputFile...
+
+Amarração no managed bean através do objeto ‘Part’
+    Método para realização de download de arrays de bytes
+
+EJB/JPA
+    Classes de serviço/facade/repositório, entidades, unidade de persistência etc
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Arquiteturas-cliente-servidor maintained by <a href="https://github.com/hamiltondematos">hamiltondematos</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
